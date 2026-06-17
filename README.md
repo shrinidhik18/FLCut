@@ -1,6 +1,6 @@
 # FLCut — Finite Loop Club's Event Link Manager
 
-**Live:** _deploy URL goes here_ · **Repo:** _this one_
+**Live:** [https://flcut-xi.vercel.app](https://flcut-xi.vercel.app) · **Repo:** [https://github.com/shrinidhik18/FLCut](https://github.com/shrinidhik18/FLCut)
 
 ---
 
@@ -118,7 +118,6 @@ clicks
 
 **No cron jobs.** Expiry and scheduling are evaluated at query time. Simpler to deploy: no worker process to manage, no scheduler to keep running, no drift between the cron tick and the actual user request.
 
-**No waitlist redirect per link.** Currently redirects to `/?error=capped` when a cap is hit without a fallback URL. In production you'd want a configurable fallback URL per link — that's the obvious next feature.
 
 ---
 
@@ -207,3 +206,13 @@ src/
     links.ts              ← data access layer (DB queries + memory fallback)
     memoryStore.ts        ← in-memory fallback for development without a DB
 ```
+
+---
+
+## Screenshots
+
+### Landing Page
+![Landing](screenshots/home.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
